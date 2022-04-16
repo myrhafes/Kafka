@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 @Service
@@ -22,5 +23,14 @@ public class PageEventService {
     @Bean
     public Supplier<pageEvent> pageEventSupplier() {
         return ()-> new pageEvent("S1", "U1", new Date(), 5000);
+    }
+
+    @Bean
+    public Function<pageEvent, pageEvent> pageEventFunction() {
+        return (input) -> {
+            input.setName("L"+input.getName());
+            input.setUser("New User");
+            return input;
+        };
     }
 }
