@@ -2,7 +2,7 @@
 Hi!
 This my repository for testing Kafka with Spring Cloud Stream
 
-## How to install ActiveMQ ?(Windows)
+## How to install Kafka ?(Windows)
 ###Step 1: 
 From a console window, change to the installation directory and run Kafka: 
 ```
@@ -24,3 +24,14 @@ start bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 -
 ```
 start bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic R1
 ```
+
+## Built with :
+
+- JAVA
+- KAFKA
+- SPRING CLOUD STREAM
+- Intellij Idea
+
+## Contributors :
+
+-  [Mohamed Yassine Rhafes](https://www.linkedin.com/in/myrhafes/) [https://www.linkedin.com/in/myrhafes/](https://www.linkedin.com/in/myrhafes/)
