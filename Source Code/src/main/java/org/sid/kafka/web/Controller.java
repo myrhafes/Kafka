@@ -1,6 +1,7 @@
 package org.sid.kafka.web;
 
 import org.sid.kafka.entities.pageEvent;
+import org.sid.kafka.service.PageEventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +23,7 @@ public class Controller {
                 new Date(),
                 new Random().nextInt());
         streamBridge.send(topic, pEvent);
+
         return pEvent;
     }
 }
