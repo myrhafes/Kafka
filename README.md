@@ -10,7 +10,7 @@ cd [kafka_install_dir]
 ```
 ###Step 2: lanching zookeeper
 ```
-start bin\windows\zookeeper-server-start.bat config/zookeeper.propreties
+start bin\windows\zookeeper-server-start.bat config/zookeeper.properties
 ```
 ###Step 3: lanching Kafka server
 ```
